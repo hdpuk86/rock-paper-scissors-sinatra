@@ -1,6 +1,6 @@
 require 'sinatra'
 require 'sinatra/contrib/all'
-require 'json'
+# require 'json'
 
 require_relative 'models/game'
 
@@ -8,6 +8,22 @@ game = Game.new()
 
 get '/' do
 erb(:home)
+end
+
+get '/start' do
+  erb(:start)
+end
+
+get '/scissors' do
+  erb(:scissors)
+end
+
+get '/rock' do
+  erb(:rock)
+end
+
+get '/paper' do
+  erb(:paper)
 end
 
 get '/rock/:hand' do
