@@ -4,12 +4,14 @@
   <link rel="stylesheet" href="/style.css"/>
 </head>
 <body>
-  <nav>
+  <div id="header_background">
+  <nav id="nav_bar">
     <ul>
-      <li><a href="/">Home</a></li>
+      <li><button id="home_button"><a href="/">Home</a></li></button>
     </ul>
+    </nav>
     <h1 id="page_header">Rock, Paper, Scissors</h1>
+  </div>
     <%= yield %>
-  </nav>
 </body>
 </html>
